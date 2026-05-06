@@ -45,6 +45,7 @@ html {
     font-size: 15px;
     border: 0;
     margin-top: 20px;
+    cursor: pointer;
 }
 /*container pai*/
 .login__page {
@@ -119,6 +120,38 @@ html {
     max-width: 100%;
     height: auto;
 }
+/*modal*/
+.modal {
+    display: none; /*nao aparece, e remove os filhos*/
+    position: fixed; /*fixa o modal na tela*/
+    z-index: 1000;
+    left: 0; top: 0;
+    width: 100%; height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    align-items: center; /*vertical*/
+    justify-content: center; /*horizontal*/
+}
+
+.modal-content {
+    background-color: var(--cor-branco);
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    text-align: center;
+    position: relative; /*permite o uso do position absolut na area definida */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+.modal-title {
+    color: var(--cor-azul);
+}
+.close-button {
+    position: absolute; /*posiciona o 'x' de forma livre*/
+    right: 15px; top: 10px;
+    cursor: pointer; /*muda o ponteiro*/
+    font-size: 24px;
+    color: var(--cor-azul);
+}
+
 @media (max-width: 768px) { /*tablet*/
     .login__page {
         flex-direction: column-reverse; /* Banner em cima, Login embaixo (ou vice-versa) */
