@@ -9,8 +9,7 @@
     <link rel="shortcut icon" href="../img/img-icon.ico" type="image/x-icon">
     <!--Fontes-->
     <link href="https://fonts.googleapis.com/css2?family=Hind:wght@400;500;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -32,7 +31,7 @@
             <div class="login__container">
                 <div class="login__content-wrapper">
                     <h1 class="login__title">Login</h1>
-                    <form action="#" method="POST" class="form-login">
+                    <form action="#" method="POST" class="form-login" id="form-login">
                         <fieldset class="form-login__field">
                             <!--inputs e labels-->
                             <label for="nome" class="form-login__label">Nome</label>
@@ -48,7 +47,7 @@
                             <input type="date" id="birthday" name="birthday"
                                 class="form-login__input form-login__input--date" min="1900-01-01" max="2050-05-05"
                                 required>
-                            <button type="submit" class="form-login__button">Login</button>
+                            <button type="submit" class="form-login__button" id="btn-login">Login</button>
                         </fieldset>
                     </form>
                 </div>
@@ -76,11 +75,13 @@
     <!-- popup de inválido -->
     <div id="popup-modal" class="modal">
         <div class="modal-content">
-            <span class="close-button">&times;</span>
+            <span class="close-button" id="close-button" onclick="closeModel()">&times;</span>
             <h2 class="modal-title">Atenção!</h2>
             <p class="modal-message">Preencha todos os campos corretamente.</p>
         </div>
     </div>
+    <script src="../js/login.js"></script>
+    <script src="../js/auth-check.js"></script>
 </body>
 
 </html>
