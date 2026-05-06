@@ -20,7 +20,7 @@ html {
     flex-direction: column;
     margin: 200px;
     width: 50%;
-    height: 48.4vh;
+    height: 48.3vh;
     border-radius: 10px;
     border: 1px solid var(--cor-azul) ;
     background-color: var(--cor-azul-bebe);
@@ -29,7 +29,7 @@ html {
 .form-cadastro__field {
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 10px;
     margin: 15px;
     
 }
@@ -43,7 +43,7 @@ html {
     font-weight: 700;
     font-size: 15px;
     border: 0;
-    margin-top: 17px;
+    margin-top: 35px;
 }
 /*container pai*/
 .login-page {
@@ -110,4 +110,46 @@ html {
 .banner__logo-img {
     max-width: 100%;
     height: auto;
+}
+@media (max-width: 768px) { /*tablet*/
+
+    html {
+    background: linear-gradient(45deg, var(--cor-azul), var(--cor-azul-bebe));
+    height: 100;
+    }
+
+    .login-page {
+        flex-direction: column-reverse;
+    }
+    .login__container {
+        justify-content: center;
+        align-items: center;
+    }
+    .login__container, .login-container__aside {
+        width: 100%;
+        flex: none;
+    }
+
+    .form-cadastro {
+        margin: 20px;
+        width: 70%;
+    }
+
+    .banner-title--highlight, .banner-title {
+        font-size: 3rem;
+        padding-left: 5px;
+        line-height: 35px;
+    }
+
+    .login-container__aside {
+        min-height: auto;
+        padding: 20px 0 5px 20px;
+        background: none;
+    }
+    .banner-content {
+        margin-left: 13%;
+    }
+    .banner__logo-container, .banner__logo-img {
+        display: none;
+    }
 }
