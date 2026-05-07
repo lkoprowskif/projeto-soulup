@@ -1,7 +1,7 @@
 const modal = document.getElementById('popup-modal')
 
-function closeModel() {
-    model.style.display = "none";
+function closeModal() {
+    modal.style.display = "none";
 }
 
 //Altera qualquer texto do HTML
