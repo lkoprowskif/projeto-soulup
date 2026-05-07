@@ -10,8 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (isLogado === 'true' && loginBtn && nome) {
         
         //muda o que esta escrito no botao de login
-        loginBtn.innerText = `Olá, ${nome}!`;
-        
+        loginBtn.innerHTML = `Olá, <strong>${nome}</strong>!`;
         // remove o link do botao
         loginBtn.removeAttribute('href');
         
