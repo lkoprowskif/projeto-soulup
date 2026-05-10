@@ -20,7 +20,7 @@ Através de um sistema integrado de IA, transformamos cada quilometro caminhado,
 
 | 🌱 Sustentabilidade | 🤖 Tecnologia | 👥 Conexões | 💰 Recompensa |
 | :--- | :--- | :--- | :--- |
-| Transforme ações eco-friendly em lucro real. Otimizamos sua reciclagem com rotas inteligentes até centros parceiros. | Utiliza IA avançada para validações precisas com reconhecimento de imagem e filtros antifraude integrados. | Criamos uma rede global onde seu Avatar Único evolui conforme seu progresso no ranking ativo. | Suas boas ações viram pontos **ECOA**. O top #1 do ranking global garante a conta paga por nós! |
+| Atos sustentáveis se transformam em lucro real no nosso aplicativo, onde cada ação conta.  | Para deixar nosso sistema mais seguro, iremos desenvolver | Criamos uma rede global onde seu Avatar Único evolui conforme seu progresso no ranking ativo. | Suas boas ações viram pontos **ECOA**. O top #1 do ranking global garante a conta paga por nós! |
 
 ---
 
