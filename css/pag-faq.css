@@ -115,12 +115,10 @@ body {
     cursor: pointer;
 }
 
-#footer__p {
+.footer__p {
     color: var(--cor-branco);
     text-align: center;
-    justify-content: center;
-    margin-top: auto;
-    width: 100%;
+    padding: 20px 0; /* Adicionado padding para o copyright não colar no fundo */
 }
 
 @media (max-width: 768px) {
