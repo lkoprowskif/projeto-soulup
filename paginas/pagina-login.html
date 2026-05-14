@@ -9,7 +9,8 @@
     <link rel="shortcut icon" href="../img/img-icon.ico" type="image/x-icon">
     <!--Fontes-->
     <link href="https://fonts.googleapis.com/css2?family=Hind:wght@400;500;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
     <script src="../js/login.js" defer></script>
     <script src="../js/modal.js" defer></script>
     <script src="../js/auth-check.js" defer></script>
@@ -19,6 +20,7 @@
     <header class="header__container">
         <img src="../img/logo-soulup.webp" alt="SoulUp" class="header__logo">
         <nav class="nav__container">
+            <button id="btn-mobile">Menu</button>
             <div class="nav__menu">
                 <a href="../index.html" class="nav__link">Página Inicial</a>
                 <a href="./pagina-quem-somos.html" class="nav__link">Quem somos?</a>
@@ -47,8 +49,8 @@
                             <input type="password" id="password" name="password" class="form-login__input"
                                 placeholder="Digite sua senha" minlength="8" maxlength="30">
                             <label for="birthday" class="form-login__label">Data de Nascimento</label>
-                            <input type="date" id="birthday" name="birthday"
-                                class="form-login__input" min="1900-01-01" max="2050-05-05">
+                            <input type="date" id="birthday" name="birthday" class="form-login__input" min="1900-01-01"
+                                max="2050-05-05">
                             <button type="submit" class="form-login__button" id="btn-login">Login</button>
                         </fieldset>
                     </form>
@@ -82,6 +84,9 @@
             <p class="modal-message" id="modal-message">Preencha todos os campos corretamente.</p>
         </div>
     </div>
+    <footer>
+        <p class="footer__copyright">&copy; 2026 SOUL UP. Todos os direitos reservados.</p>
+    </footer>
 </body>
 
 </html>
