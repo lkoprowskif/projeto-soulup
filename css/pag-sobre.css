@@ -100,15 +100,10 @@ margin-bottom: 15px;
 max-width: 400px;
 }
 
-footer {
-margin-top: auto;
-}
-
-#footer__p {
-text-align: center;
-padding: 15px;
-color: #4f6f6f;
-font-size: 14px;
+.footer__p {
+    color: var(--cor-azul-escuro);
+    text-align: center;
+    padding: 20px 0; /* Adicionado padding para o copyright não colar no fundo */
 }
 
 @media (max-width: 1024px) and (min-width: 769px) { 
