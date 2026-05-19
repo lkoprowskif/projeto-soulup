@@ -22,8 +22,7 @@ body {
 /*Cabeçalho da página*/
 .header__container {
   background: linear-gradient(
-    to right,
-    var(--cor-azul-bebe),
+    to right, var(--cor-ciano),
     var(--cor-azul),
     var(--cor-ciano)
   );
@@ -55,6 +54,15 @@ body {
 /*Hamburger*/
 #btn-mobile {
   display: none;
+  background: linear-gradient(to right, var(--cor-azul), var(--cor-ciano));
+  color: var(--cor-branco);
+  border: 1px solid var(--cor-azul-bebe);
+  font-size: 15px;
+  height: 35px;
+  width: 35px;
+  border-radius: 15px;
+  justify-content: center;
+  align-items: center;
 }
 /*Navegação*/
 .nav__link {
@@ -94,6 +102,7 @@ body {
     padding: 3px 25px;
     text-decoration: none;
     margin-left: auto;
+    
   }
 
 
@@ -177,9 +186,8 @@ body {
       display: none;
     }
     .header__logo {
-      margin: 0;
+      margin-left: 10px;
       width: 100px;
-      display: block;
     }
       #btn-mobile {
       display: flex;
@@ -190,9 +198,12 @@ body {
       width: 100%;
       gap: 10px;
       height: auto;
+      border-top: 1px solid var(--cor-branco);
     }
+
     .nav__link{
-      font-size: 10px;
+      font-size: 13px;
+      border-bottom: 1px dotted var(--cor-azul-bebe);
     }
     .nav__link:hover {
       background-color: #c8e9e9;
@@ -201,9 +212,9 @@ body {
     }
     .header__container {
       display: flex;
-      align-items: center;
-      justify-content: space-between;
-      flex-wrap: wrap;
+      align-items: flex-start;
+      background: linear-gradient(to right, var(--cor-azul), 
+      var(--cor-ciano));
     }
 
 }
