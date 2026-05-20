@@ -85,7 +85,11 @@ html {
 .form-login__input {
     padding: 5px 20px;
     border-radius: 15px;
-    border: 1px solid var(--cor-azul);
+    border: none;
+    height: 35px;
+}
+.form-login__input:focus { /* quando selecionado*/
+    outline: 2px solid var(--cor-azul); 
 }
 /*conteúdo do banner*/
 .banner-content {
