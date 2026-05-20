@@ -10,3 +10,10 @@ function toggleMenu() {
     navMenu.classList.toggle('nav__menu--active');
 }
 btnMobile.addEventListener('click', toggleMenu);
+
+
+// mudança de cor ao clique
+btnMobile.addEventListener('click', () => {
+  // liga/desliga
+    btnMobile.classList.toggle('ativo');
+});
