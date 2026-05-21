@@ -81,6 +81,7 @@ body {
   padding: 10px 5px;
   display: flex;
   align-items: center;
+  user-select: none;
 }
 
 .nav__link::after {
@@ -110,6 +111,7 @@ body {
     padding: 3px 25px;
     text-decoration: none;
     margin-left: auto;
+    user-select: none;
     
   }
 
