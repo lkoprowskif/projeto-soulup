@@ -105,11 +105,37 @@ color: var(--cor-azul-escuro);
 text-align: center;
 padding: 20px 0; /* Adicionado padding para o copyright não colar no fundo */
 }
-
+@media (max-width: 1050px) /*desktop*/ {
+    .hero__title,
+    .hero__title--highlight {
+    font-size: 40px;
+}
+    .hero__description {
+    font-size: 20px;
+    }
+    .features__container {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .features__card {
+        width: 100%;
+    }
+    .features__card-title,
+    .features__card-text {
+        width: 80%;
+    }
+    .features__card-title {
+        font-size: 20px;
+    }
+    .features__card-text {
+        border-right: none;
+        font-size: 15px;
+    }
+}
 @media (max-width: 768px) /*tablet*/ {
 
 html {
-    background: none;
+    background: linear-gradient(90deg, var(--cor-branco), #b3dadb);
 }
     .hero__title,
     .hero__title--highlight {
@@ -123,11 +149,11 @@ html {
         gap: 20px;
     }
     .features__card {
-        width: 50%;
+        width: 100%;
     }
     .features__card-title,
     .features__card-text {
-        width: 100%;
+        width: 80%;
     }
     .features__card-title {
         font-size: 20px;
@@ -140,7 +166,7 @@ html {
 
 @media (max-width: 480px) { /*cel*/
     html {
-        background: none;
+        background: linear-gradient(90deg, var(--cor-branco), #b3dadb);
     }
     .hero__title,
     .hero__title--highlight {
