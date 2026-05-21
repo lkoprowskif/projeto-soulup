@@ -32,7 +32,6 @@
     display: block;
     flex-direction: column;
     gap: 16px;
-    ;
 }
 
 .hero__a {
@@ -43,6 +42,10 @@
     align-items: center;
     gap: 10px;
 }
+.hero__a:hover {
+    transition: 0.5s ease;
+    text-decoration: underline;
+}
 
 /* lado direito */
 .hero__container {
@@ -52,6 +55,8 @@
     grid-template-rows: 300px 300px;
     /*vertical*/
     gap: 20px;
+    align-content: center; /*move o bloco todo*/
+    height: 80vh;
 }
 
 .hero__item {
