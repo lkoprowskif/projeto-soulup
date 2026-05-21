@@ -1,6 +1,6 @@
 @import url("style.css");
 
-html, body {
+html {
     margin: 0;
     padding: 0;
     font-family: var(--fonte-texto);
@@ -117,8 +117,8 @@ body {
 
 .footer__p {
     color: var(--cor-branco);
-    text-align: center;
-    padding: 20px 0; /* Adicionado padding para o copyright não colar no fundo */
+    position: fixed;
+    bottom: 0;
 }
 
 @media (max-width: 768px) {

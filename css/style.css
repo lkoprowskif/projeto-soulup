@@ -113,6 +113,15 @@ body {
   }
 
 
+/* Footer */
+.footer__p {
+    color: var(--cor-azul-escuro);
+    text-align: center;
+    padding: 20px 0; /* Adicionado padding para o copyright não colar no fundo */
+    user-select: none;
+    font-size: 14px;
+}
+
 /*Responsividade*/
 @media (max-width: 1300px) /*desktop*/ {
   .nav-btn__login {
