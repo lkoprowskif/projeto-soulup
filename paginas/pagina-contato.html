@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="../css/pag-contato.css">
     <link rel="shortcut icon" href="../img/img-icon.ico" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css2?family=Hind:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <script src="../js/auth-check.js" defer></script>
     <script src="../js/btn-mobile.js" defer></script>
 </head>
@@ -23,10 +24,46 @@
                 <a href="./pagina-sobre.html" class="nav__link">Sobre</a>
                 <a href="./pagina-faq.html" class="nav__link">FAQ</a>
                 <a href="./pagina-contato.html" class="nav__link nav__link--active">Contato</a>
+                <a href="./pagina-desafio.html" class="nav__link">Desafios</a>
+                <a href="./pagina-solucao.html" class="nav__link">Soluções</a>
             </div>
             <a href="./pagina-login.html" class="nav-btn__login">Entrar</a>
         </nav>
     </header>
+    <main class="main__layout">
+        <section class="contato__section">
+            <h1 class="hero__title">Contato</h1>
+            <ul class="contato__list">
+                <li>
+                    <a class="hero__a" href="mailto:soulup@gmail.com" target="_blank">
+                        <i class="fa-solid fa-envelope"></i> soulup@gmail.com
+                    </a>
+                </li>
+                <li>
+                    <a class="hero__a" href="https://github.com/anapmagalhaess/projeto-soulup" target="_blank">
+                        <i class="fa-brands fa-github"></i> Github
+                    </a>
+                </li>
+            </ul>
+        </section>
+
+        <section class="hero__container">
+            <div class="hero__item item__oceano">
+                <img class="hero__img hero__img-01" src="../img/img-oceano.webp" alt="Vista ao oceano">
+                <a href="./pagina-sobre.html" class="icon__plus">+</a>
+                <p class="text__overlay">Seu clique é digital.<br>O impacto é real.</p>
+            </div>
+
+            <div class="hero__item item__block">
+                <h2 class="hero__subtitle">O primeiro <br>algoritmo <br>regenerativo <br>do mundo.</h2>
+            </div>
+
+            <div class="grid__item item__waterfall">
+                <img class="hero__img hero__img-02" src="../img/img-paisagem.webp" alt="Vista de uma cachoeira">
+            </div>
+        </section>
+    </main>
+
     <footer>
         <p class="footer__p">&copy; 2026 SOUL UP. Todos os direitos reservados.</p>
     </footer>

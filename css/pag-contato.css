@@ -1,1 +1,145 @@
 @import url("style.css");
+
+/* layout lado a lado */
+.main__layout {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 40px;
+    gap: 50px;
+}
+
+/* contatos, lado esquerdo */
+.contato__section {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-left: 50px;
+}
+
+.hero__title {
+    color: var(--cor-azul, #13959c);
+    font-size: 50px;
+    margin: 0 0 15px 0;
+    font-weight: 700;
+}
+
+.contato__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: block;
+    flex-direction: column;
+    gap: 16px;
+    ;
+}
+
+.hero__a {
+    color: var(--cor-azul-escuro, #1d7b81);
+    text-decoration: none;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* lado direito */
+.hero__container {
+    display: grid;
+    grid-template-columns: 500px 350px;
+    /*horizontal*/
+    grid-template-rows: 300px 300px;
+    /*vertical*/
+    gap: 20px;
+}
+
+.hero__item {
+    position: relative;
+}
+
+.item__oceano {
+    grid-row: span 2;
+    /*ocupa 2 espacos do grid vert*/
+    height: 620px;
+}
+
+.hero__img-01 {
+    width: 100%;
+    height: 100%;
+}
+
+/* (+) */
+.icon__plus {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background-color: var(--cor-branco);
+    color: var(--cor-azul);
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 18px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.icon__plus:hover {
+    background-color: var(--cor-azul);
+    color: var(--cor-branco);
+    transition: 0.5s ease;
+}
+
+/* sobreposicao oceano */
+.text__overlay {
+    position: absolute;
+    bottom: 25px;
+    left: 20px;
+    color: var(--cor-branco);
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.3;
+    margin: 0;
+}
+
+/* bloco ciano */
+.item__block {
+    background: linear-gradient(to right, var(--cor-azul), var(--cor-ciano));
+    padding: 30px 25px;
+    box-sizing: border-box;
+}
+
+.hero__subtitle {
+    color: var(--cor-branco);
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin: 0;
+}
+
+/* cachoeira */
+.hero__img-02 {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* footer*/
+.footer__p {
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+    color: var(--cor-azul-escuro);
+    user-select: none;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
