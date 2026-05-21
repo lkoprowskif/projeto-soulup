@@ -44,7 +44,6 @@ font-size: 16px;
 border-radius: 25px;
 cursor: pointer;
 text-decoration: none;
-user-select: none;
 }
 
 .hero__button:hover {

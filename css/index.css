@@ -2,115 +2,148 @@
 
 /* reset */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+margin: 0;
+padding: 0;
+box-sizing: border-box;
 }
 
 html {
-    background: var(--cor-plano-de-fundo);
+background: var(--cor-plano-de-fundo);
 }
 
 /* container 1*/
 .hero__container {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    margin-left: 10px;
-    min-height: 80vh; /* Adicionado para garantir respiro vertical no hero */
+display: flex;
+align-items: center;
+justify-content: space-around;
+margin-left: 10px;
+min-height: 80vh; /* Adicionado para garantir respiro vertical no hero */
 }
 
 /* títulos e textos  */
 .hero__content {
-    width: 90%;
+width: 90%;
 }
 
 .hero__title {
-    margin-top: 40px;
-    color: var(--cor-azul-escuro);
+margin-top: 40px;
+color: var(--cor-azul-escuro);
 }
 
-.hero__title, .hero__title--highlight {
-    line-height: 120%;
-    font-size: 50px;
+.hero__title,
+.hero__title--highlight {
+line-height: 120%;
+font-size: 50px;
 }
 
-.hero__title--highlight { 
-    color: var(--cor-ciano-2); 
-    display: block;
+.hero__title--highlight {
+color: var(--cor-ciano-2);
+display: block;
 }
 
 .hero__description {
-    font-size: 20px;
-    color: var(--cor-azul-escuro);
-    margin-top: 20px;
+font-size: 20px;
+color: var(--cor-azul-escuro);
+margin-top: 20px;
 }
 
 .hero__subtitle {
-    color: var(--cor-azul);
-    font-size: 30px;
-    padding-top: 15px;
+color: var(--cor-azul);
+font-size: 30px;
+padding-top: 15px;
 }
 
 /* imagens */
 .hero__mockup {
-    display: none; /* block */
-    width: 600px;
-    height: auto;
-    object-fit: contain;
+display: none; /* block */
+width: 600px;
+height: auto;
+object-fit: contain;
 }
 
 /* container 2 */
 .features__container {
-    display: flex;
-    justify-content: space-around;
-    background-color: white;
-    margin: 30px 5% 50px 5%; 
-    padding: 20px;
-    border-radius: 20px;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2); /* horizontal, vertical, desfoque*/
+display: flex;
+justify-content: space-around;
+background-color: white;
+margin: 30px 5% 50px 5%;
+padding: 20px;
+border-radius: 20px;
+box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2); /* horizontal, vertical, desfoque*/
 }
 
 .features__card {
-    text-align: center;
-    width: 22%;
-    display: flex; /* Adicionado para alinhar ícone, título e texto verticalmente */
-    flex-direction: column;
-    align-items: center;
+text-align: center;
+width: 22%;
+  display: flex; /* Adicionado para alinhar ícone, título e texto verticalmente */
+flex-direction: column;
+align-items: center;
 }
 
 .features__card-title {
-    font-size: 22px;
-    color: var(--cor-azul);
-    margin-bottom: 10px;
-    margin-top: 15px; /* Adicionado para separar o título do ícone acima */
+font-size: 22px;
+color: var(--cor-azul);
+margin-bottom: 10px;
+  margin-top: 15px; /* Adicionado para separar o título do ícone acima */
 }
 
 .features__card-text {
-    font-size: 16px;
-    color: var(--cor-azul-escuro);
-    border-right: 1px solid #6666662c;
-    padding: 10px 20px; /* Simplificado o padding */
-    width: 100%; /* Garante que o texto ocupe o card todo */
+font-size: 16px;
+color: var(--cor-azul-escuro);
+border-right: 1px solid #6666662c;
+padding: 10px 20px; /* Simplificado o padding */
+width: 100%; /* Garante que o texto ocupe o card todo */
 }
 
 .features__card:last-child .features__card-text {
-    border-right: none;
+border-right: none;
 }
 
 /*footer*/
 .footer__p {
-    color: var(--cor-azul-escuro);
-    text-align: center;
-    padding: 20px 0; /* Adicionado padding para o copyright não colar no fundo */
+color: var(--cor-azul-escuro);
+text-align: center;
+padding: 20px 0; /* Adicionado padding para o copyright não colar no fundo */
 }
 
-@media (max-width: 480px) {
-    
+@media (max-width: 768px) /*tablet*/ {
+
+html {
+    background: none;
+}
+    .hero__title,
+    .hero__title--highlight {
+    font-size: 30px;
+}
+    .hero__description {
+    font-size: 17px;
+    }
+    .features__container {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .features__card {
+        width: 50%;
+    }
+    .features__card-title,
+    .features__card-text {
+        width: 100%;
+    }
+    .features__card-title {
+        font-size: 20px;
+    }
+    .features__card-text {
+        border-right: none;
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 480px) { /*cel*/
     html {
         background: none;
     }
-    .hero__title, .hero__title--highlight {
+    .hero__title,
+    .hero__title--highlight {
         font-size: 30px;
     }
     .features__container {
@@ -120,10 +153,21 @@ html {
     .features__card {
         width: 100%;
     }
-    .features__card-title, .features__card-text {
+    .features__card-title,
+    .features__card-text {
         width: 100%;
+    }
+    .features__card-title {
+        font-size: 20px;
     }
     .features__card-text {
         border-right: none;
+        font-size: 15px;
+    }
+    .footer__p {
+        font-size: 13px;
+    }
+    .hero__description {
+        font-size: 17px;
     }
 }

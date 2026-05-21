@@ -17,6 +17,7 @@
   --fonte-texto: "Hind", sans-serif;
 }
 body {
+    user-select: none;
     font-family: var(--fonte-texto);
 }
 /*Cabeçalho da página*/
@@ -63,7 +64,6 @@ body {
   border-radius: 15px;
   justify-content: center;
   align-items: center;
-  user-select: none;
   cursor: pointer;
 }
 #btn-mobile.ativo {
@@ -81,7 +81,6 @@ body {
   padding: 10px 5px;
   display: flex;
   align-items: center;
-  user-select: none;
 }
 
 .nav__link::after {
@@ -111,7 +110,6 @@ body {
     padding: 3px 25px;
     text-decoration: none;
     margin-left: auto;
-    user-select: none;
     
   }
 
