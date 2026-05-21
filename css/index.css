@@ -16,13 +16,13 @@ html {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    margin-left: 60px;
+    margin-left: 10px;
     min-height: 80vh; /* Adicionado para garantir respiro vertical no hero */
 }
 
 /* títulos e textos  */
 .hero__content {
-    width: 45%;
+    width: 90%;
 }
 
 .hero__title {
@@ -68,7 +68,7 @@ html {
     margin: 30px 5% 50px 5%; 
     padding: 20px;
     border-radius: 20px;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1); /* horizontal, vertical, desfoque*/
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2); /* horizontal, vertical, desfoque*/
 }
 
 .features__card {
@@ -98,10 +98,32 @@ html {
     border-right: none;
 }
 
-
 /*footer*/
 .footer__p {
     color: var(--cor-azul-escuro);
     text-align: center;
     padding: 20px 0; /* Adicionado padding para o copyright não colar no fundo */
+}
+
+@media (max-width: 480px) {
+    
+    html {
+        background: none;
+    }
+    .hero__title, .hero__title--highlight {
+        font-size: 30px;
+    }
+    .features__container {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .features__card {
+        width: 100%;
+    }
+    .features__card-title, .features__card-text {
+        width: 100%;
+    }
+    .features__card-text {
+        border-right: none;
+    }
 }

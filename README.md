@@ -56,7 +56,7 @@ O desenvolvimento deste projeto foi realizado utilizando as seguintes ferramenta
 
 ## 📞 Contato e Suporte
 
-Para dúvidas, sugestões ou suporte técnico, pode entrar em contacto através de qualquer um dos perfis do LinkedIn listados acima ou abrir uma *Issue* no repositório oficial do projeto.
+Para dúvidas, sugestões ou suporte técnico, pode entrar em contato através de qualquer um dos perfis do LinkedIn listados acima ou abrir uma *Issue* no repositório oficial do projeto.
 
 ---
 <p align="center">
