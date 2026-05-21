@@ -98,12 +98,6 @@ html {
     border-right: none;
 }
 
-/*footer*/
-.footer__p {
-    color: var(--cor-azul-escuro);
-    text-align: center;
-    padding: 20px 0; /* Adicionado padding para o copyright não colar no fundo */
-}
 
 @media (max-width: 480px) {
     
